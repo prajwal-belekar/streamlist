@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd   
 import numpy as np
+import os
+
 
 #Displaying text content
 st.title("My First Streamlit App") 
@@ -14,7 +16,9 @@ st.bar_chart(df)
 
 #sidebar , image , videos
 st.sidebar.title("Navigation")
-st.image("C:\\Users\\hp\\OneDrive\\Pictures\\Saved Pictures\\dark.jpg", width=600)
+image_path = os.path.join(os.path.dirname(__file__), "dark.jpg")
+st.image(image_path, width=600)
+
 st.video(r"D:\new wallpaper - Made with Clipchamp.mp4")
 
 #file uploader
