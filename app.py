@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd   
 import numpy as np
 
+from media import IMAGE_PATH, VIDEO_PATH 
+
 #Displaying text content
 st.title("My First Streamlit App") 
 st.write("Hello, welcome to my first Streamlit app!")
@@ -14,8 +16,8 @@ st.bar_chart(df)
 
 #sidebar , image , videos
 st.sidebar.title("Navigation")
-st.image("https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg", width=600)
-st.video("https://www.pexels.com/download/video/36168059/?fps=25.0&h=1080&w=1920")
+st.image(IMAGE_PATH, width=600)
+st.video(VIDEO_PATH)
 
 #file uploader
 upload_file=st.file_uploader("Upload a CSV file", type=["csv"])
