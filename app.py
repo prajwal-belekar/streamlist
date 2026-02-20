@@ -15,8 +15,8 @@ st.bar_chart(df)
 
 #sidebar , image , videos
 st.sidebar.title("Navigation")
-st.image("assets/my_image.jpg", width=600)
-st.video("assets/my_video.mp4")
+st.image("assets/unnamed.jpg", width=600)
+st.video("assets/new wallpaper - Made with Clipchamp.mp4")
 
 #file uploader
 upload_file=st.file_uploader("Upload a CSV file", type=["csv"])
