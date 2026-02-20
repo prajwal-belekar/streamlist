@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd   
 import numpy as np
 
-from media import IMAGE_PATH, VIDEO_PATH 
 
 #Displaying text content
 st.title("My First Streamlit App") 
@@ -16,8 +15,8 @@ st.bar_chart(df)
 
 #sidebar , image , videos
 st.sidebar.title("Navigation")
-st.image(IMAGE_PATH, width=600)
-st.video(VIDEO_PATH)
+st.image("assets/my_image.jpg", width=600)
+st.video("assets/my_video.mp4")
 
 #file uploader
 upload_file=st.file_uploader("Upload a CSV file", type=["csv"])
